@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tienda Online de Mi Librería - Explora nuestro catálogo completo de libros en todos los géneros.">
+    <title>Mi Librería - Tienda Online</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="header-container">
+                <h1 class="brand-name">Lumen Books</h1>
+                <div class="brand-logo">
+                    <img src="imagenes/logo.png" alt="Logo Lumen Books">
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="header-container">
+                <div class="hamburger-menu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="header-search">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Buscar en Lumen Books..." class="search-input-header">
+                </div>
+
+                <nav class="header-nav" id="mainNav">
+                    <a href="index.html">Tu librerías</a>
+                    <a href="tienda.html">Compra Online</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== CONTENIDO TIENDA ========== -->
+    <main class="store-container-main">
+
+        <div class="store-layout-wrapper">
+            <!-- SIDEBAR FILTROS -->
+            <aside class="filters-sidebar">
+                <h2 class="filters-title">Filtros</h2>
+
+                <div class="filter-group">
+                    <h3 class="filter-subtitle">Categorías</h3>
+                    <ul class="filter-list">
+                        <li><a href="#" class="active-filter">Todos los productos</a></li>
+                        <li><a href="#">Libros</a></li>
+                        <li><a href="#">Tazas</a></li>
+                        <li><a href="#">Bolsas</a></li>
+                        <li><a href="#">Otros</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-subtitle">Disponibilidad</h3>
+                    <ul class="filter-list">
+                        <li><a href="#">En stock</a></li>
+                        <li><a href="#">Agotado</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- GRID PRODUCTOS PRINCIPAL -->
+            <section class="products-section">
+                <h2 class="section-heading-store">Libros y artículos destacados</h2>
+
+                <div class="products-grid-2x2">
+                    <!-- Producto 1 -->
+                    <article class="store-product-card">
+                        <span class="badge-blue">NUEVO</span>
+                        <div class="store-img-container">
+                            <img src="imagenes/la_chica_del_lago.png" alt="La chica del lago">
+                        </div>
+                        <h3 class="store-product-title">La chica del lago</h3>
+                        <p class="store-product-sub">El agua guarda nombres.</p>
+                        <p class="store-product-author">Mikel Santiago</p>
+                        <div class="price-row">
+                            <span class="price">24,90 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2: Juego de Tronos -->
+                    <article class="store-product-card">
+                        <div class="store-img-container">
+                            <img src="imagenes/juego_de_tronos.png" alt="Juego de Tronos">
+                        </div>
+                        <h3 class="store-product-title">Juego de Tronos</h3>
+                        <p class="store-product-sub">El invierno vigila.</p>
+                        <p class="store-product-author">George R. R. Martin</p>
+                        <div class="price-row">
+                            <span class="price">14,20 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3: La casa del dragón -->
+                    <article class="store-product-card">
+                        <span class="badge-pink">-25%</span>
+                        <div class="store-img-container">
+                            <img src="imagenes/la_casa_del_dragon.png" alt="La casa del dragón">
+                        </div>
+                        <h3 class="store-product-title">La casa del dragón</h3>
+                        <p class="store-product-sub">Sangre y fuego.</p>
+                        <p class="store-product-author">George R. R. Martin</p>
+                        <div class="price-row">
+                            <span class="price">21,90 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4: Astérix -->
+                    <article class="store-product-card">
+                        <div class="store-img-container">
+                            <img src="imagenes/asterix_lusitania.png" alt="Astérix en Lusitania">
+                        </div>
+                        <h3 class="store-product-title">Astérix en Lusitania</h3>
+                        <p class="store-product-sub">El viaje no primero.</p>
+                        <p class="store-product-author">Didier Conrad</p>
+                        <div class="price-row">
+                            <span class="price">10,36 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- SECCIÓN RECOMENDACIONES (ANCHO COMPLETO) -->
+        <section class="recommendations-section">
+            <div class="dashed-border-container">
+                <h2 class="recommendations-title">Libros y artículos que te pueden interesar</h2>
+
+                <div class="recommendations-grid-3">
+                    <!-- Reco 1 -->
+                    <article class="reco-card">
+                        <div class="reco-img-container">
+                            <img src="imagenes/fuego_y_sangre.png" alt="Fuego y sangre">
+                        </div>
+                        <h3 class="reco-title">Fuego y sangre</h3>
+                        <p class="reco-sub">HIELO Y FUEGO</p>
+                        <p class="reco-author">George R. R. Martin</p>
+                        <div class="price-row center-row">
+                            <span class="price">25,00 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Reco 2 -->
+                    <article class="reco-card">
+                        <div class="reco-img-container">
+                            <img src="imagenes/choque_de_reyes.png" alt="Choque de Reyes">
+                        </div>
+                        <h3 class="reco-title">Choque de Reyes</h3>
+                        <p class="reco-sub">La guerra civil asoma</p>
+                        <p class="reco-author">George R. R. Martin</p>
+                        <div class="price-row center-row">
+                            <span class="price">25,00 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+
+                    <!-- Reco 3 -->
+                    <article class="reco-card">
+                        <div class="reco-img-container">
+                            <img src="imagenes/tormenta_de_espadas.png" alt="Tormenta de espadas">
+                        </div>
+                        <h3 class="reco-title">Tormenta de espadas</h3>
+                        <p class="reco-sub">Reyes de Poniente</p>
+                        <p class="reco-author">George R. R. Martin</p>
+                        <div class="price-row center-row">
+                            <span class="price">25,00 €</span>
+                            <button class="btn-buy">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER (Reutilizado) ========== -->
+    <footer class="simple-footer">
+        <div class="footer-left">
+            <p>© Abel — Política de Datos | Cookies</p>
+        </div>
+        <div class="footer-right">
+            <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+            </svg>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mainNav = document.getElementById('mainNav');
+
+        hamburger.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

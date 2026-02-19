@@ -1,0 +1,51 @@
+/* ========================================
+   MI LIBRERÍA - ESTILOS BASE
+   Sin Responsive - Sin Frameworks
+   ======================================== */
+
+/* ========== IMPORTACIÓN DE FUENTES ========== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ========== VARIABLES CSS ========== */
+:root {
+    /* Colores */
+    --color-primary: #1976D2;
+    --color-primary-dark: #1565C0;
+    --color-primary-light: #42A5F5;
+    --color-secondary: #E3F2FD;
+    --color-accent: #FFC107;
+
+    /* Tipografía */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* ========== RESET Y BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    width: 100%;
+}
+
+/* Enlaces base */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Listas base */
+ul {
+    list-style: none;
+}
+
+/* Imágenes base */
+img {
+    display: block;
+}
